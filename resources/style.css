@@ -1,0 +1,404 @@
+:root {
+    --red: #f17373;
+    --green: #9ff09f;
+    --purple: #a792ce;
+    --blue: #89b7dd;
+    --dark: #0d0d0d;
+	--dark-green: #06191D;
+	--dark-purple: #1D1B26;
+    --light: #f3f3f3;
+    --highlight-dark: #353535;
+    --highlight-light: #dadada;
+    --yellow: #ffec7d;
+	--green-olive: #8FBC8F;
+	--green-autumn: #BDB76B;
+}
+
+body {
+	background-color: var(--dark-green);
+	color: var(--light);
+	max-width: 58rem ;
+	margin: auto ;
+	padding: 0.5rem;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1rem;
+	overflow-y: scroll;
+}
+
+body.must-play {
+	background-color: var(--dark-purple);
+}
+
+/* Styling the Different Page Sections */
+
+.wordcloud {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.wordcloud a {
+    padding: 0.19rem 0.37rem 0.19rem 0.37rem;
+    margin: 2.5px 5px 2.5px 0px;
+    border-radius: 0.19rem;
+    font-size: 14px;
+    background-color: #222222;
+}
+
+.wordcloud a:hover {
+    background-color: var(--highlight-dark);
+}
+
+#headerbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+
+#headerbar div {
+    line-height: 1.5em;
+}
+
+#headerbar a {
+    font-size: 1rem;
+    font-weight: 800;
+	color: #89b4ce;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px 0px 5px 5px;
+}
+
+#headerbar a:hover {
+    background-color: var(--highlight-dark);
+    border-radius: 5px;
+}
+
+.headtext {
+    font-size: 50px;
+    font-weight: 700;
+	letter-spacing:0.08em;   
+	color: DarkGreen;
+	text-shadow: -2px 0 Aquamarine, 0 2px Aquamarine, 2px 0 Aquamarine, 0 -2px Aquamarine;
+}
+
+.headtext.mustplay {
+	color:RebeccaPurple;
+	text-shadow: -2px 0 Violet, 0 2px Violet, 2px 0 Violet, 0 -2px Violet;
+	/*webkit-text-stroke: 2px Magenta;
+	text-stroke: 2px Magenta;*/
+}
+
+#navigation {
+    margin-top: 35px;
+}
+
+.postarea {
+    margin-top: 35px;
+    line-height: 1.5em;
+    margin-left: 15px;
+    /*background-color: black;*/
+}
+
+.list-card {
+    background-color: black;
+}
+
+
+#tabbar a {
+	background-color: var(--highlight-dark);
+	line-height: 2.7em;
+	margin-right:12px;
+	padding: 5px;
+	padding-right:10px;
+	font-size: 16px;
+	font-family: inherit;
+    font-weight: 600;
+    color: #89b4ce;
+	white-space: nowrap;
+	border:1px solid grey;
+	border-radius: 5px;
+}
+
+#tabbar a:hover {
+	background-color: thistle;
+	color: #89b4ce;
+    border-radius: 5px;
+	color: var(--dark-purple);
+}
+
+#tabbar .clicked-tab {
+	background-color: thistle;
+	font-size: 16px;
+	border-radius: 5px;
+	color: var(--dark-purple);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px 0px 15px 0px;
+    line-height: 1.6em;
+    margin: 0px 0px 0px 18px;
+}
+
+ul a {
+    padding: 3px;
+}
+
+ul a:hover {
+    background-color: var(--highlight-dark);
+    border-radius: 4px;
+}
+
+ol {
+    padding: 0px;
+    line-height: 2em;
+    margin: 0px 0px 0px 18px;
+}
+
+ol li {
+    padding: 0px 5px 0px 5px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+}
+
+#artlist {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#artlist a  {
+	font-size: 20px;
+	font-weight: 600;
+	color:DarkSeaGreen;
+}
+
+#artlist li {
+	margin-top: 28px;
+	padding-left: 1.7em;
+	text-indent: -1.7em;
+}
+
+#artlist li.like:before {
+	content: '👍';
+	color: transparent;  
+	text-shadow: 0 0 0 green;
+}
+
+#artlist li.meh:before {
+	content: '️😑';
+}
+
+#artlist li.dislike:before {
+	content: '👎';
+	color: transparent;  
+	text-shadow: 0 0 0 OrangeRed;
+}
+
+#directions ol li:focus {
+    background-color: #29290e;
+    border-radius: 5px;
+    border-color: #705613;
+}
+
+table {
+	border: 1px solid DarkSlateBlue;
+	border-collapse:collapse;
+	width: 100%;
+}
+
+th {
+	border: 1px solid DarkSlateBlue;
+	padding:5px;
+	background-color: DarkSlateBlue;
+}
+
+td {
+	border: 1px solid DarkSlateBlue;
+	padding:5px;
+}
+
+h2 {
+	color: var(--red);
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 34px 0px 15px 0px;
+}
+
+#about {
+    color: var(--yellow);
+}
+
+h3 {
+    color: DarkSeaGreen;
+    font-size: 26px;
+    margin: 36px 0px 12px 0px;
+}
+
+#topside .imagebox {
+    display: flex;
+    overflow: auto;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+}
+
+#topside .imagebox::-webkit-scrollbar {
+    height: 8px;
+    background-color: var(--highlight-dark);
+    border-radius: 5px;
+}
+
+#topside .imagebox::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 5px;
+}
+
+#topside img {
+    height: 320px;
+    width: auto;
+    border-radius: 5px;
+    margin: 0px 10px 0px 0px;
+}
+
+.infobox {
+	display: grid;
+    grid-template-columns: max-content 70%; /* max-content causes the tags to not wrap ... weird ... as if its setting a fixed width from the max-content value */
+    font-size: 14px;
+}
+
+.infobox div {  
+    margin: 0rem 1.25px 0.19rem 0rem;
+}
+
+.infobox label {
+    /*background-color: red;*/
+    color: var(--blue);
+    font-weight: bold;
+}
+
+hr {
+    border-color: var(--highlight-dark);
+    border-width: 0.06rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+img {
+	max-width: 37.5rem;
+	width: 100%;
+	margin: auto;
+	display: block;
+}
+
+.blog {
+	padding-top: 3rem;
+    margin-left: 20px;
+	margin-right: 20px;
+	text-align: left;
+}
+
+.blog .title {
+	color: var(--green-olive);
+	line-height: 3rem;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.blog .subtitle {
+	color: var(--green-olive);
+	line-height: 3rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.blog .header {
+	color: var(--green-olive);
+	line-height: 3rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 1.3rem;
+}
+
+.blog .subheader {
+	color: var(--green-autumn);
+	font-weight: bold;
+	margin-top: 0.7rem;
+	margin-bottom: 0.4rem;
+}
+
+.blog .text {
+	line-height: 2rem;
+	font-size: 1.15rem;
+	font-weight: 300;
+}
+
+.blog ul {
+    padding: 0 0 10px 0;
+    line-height: 1.6em;
+    margin: 0px 0px 0px 18px;
+}
+
+.blog li {
+	padding: 10px 0 10px 0;
+}
+
+.blog img {
+	border-radius: 0.5rem;
+	background: #000000;
+}
+
+.image {
+	background: #bbbbbb;
+	border-radius: 0.5rem;
+	width: 60%;
+	margin: 1rem 0 1rem 0;
+}
+
+.caption {
+	color: #000000;
+	margin-left: 1rem;
+	font-style: italic;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+/* 5 Star Score for Review Posts */
+
+.score{
+	font-size: 1.5rem;
+	font-weight: 600;
+	width: 8rem;
+	padding: 0 0.8rem 0 0.9rem;
+	border-radius: 2rem;
+	margin-top: 0.5rem;
+}
+
+.score-like {
+	background-color: #98FB98;
+	color: #228B22;
+}
+
+.score-dislike {
+	background-color: #FFC7CE;
+	color: #DC143C;
+}
+
+.score-meh {
+	background-color: #F0E68C;
+	color: #B8860B;
+}
+
+.score .checked {
+	display: inline-block;
+}
+
+.score .unchecked {
+	display: inline-block;
+	color: #999999;
+}
+
