@@ -94,11 +94,9 @@ body.must-play {
 }
 
 .postarea {
-    margin-top: 35px;
-	/*padding-top: 0.13rem;*/
-    line-height: 1.5em;
-    margin-left: 15px;
-    /*background-color: black;*/
+    margin-top: 2.2rem;
+    margin-left: 1rem;
+	line-height: 1.5em;
 }
 
 .list-card {
@@ -108,17 +106,17 @@ body.must-play {
 
 #tabbar a {
 	background-color: var(--highlight-dark);
-	line-height: 2.7em;
-	margin-right:12px;
-	padding: 5px;
-	padding-right:10px;
-	font-size: 16px;
+	line-height: 2.7rem;
+	margin-right: 0.75rem;
+	padding: 0.3rem;
+	padding-right: 0.6rem;
+	font-size: 1rem;
 	font-family: inherit;
     font-weight: 600;
     color: #89b4ce;
 	white-space: nowrap;
 	border:1px solid grey;
-	border-radius: 5px;
+	border-radius: 0.3rem;
 }
 
 #tabbar a:hover {
@@ -172,11 +170,12 @@ table {
 	border: 1px solid DarkSlateBlue;
 	border-collapse:collapse;
 	width: 100%;
+	font-size: 1rem;
 }
 
 th {
 	border: 1px solid DarkSlateBlue;
-	padding:5px;
+	padding: 0.3rem;
 	background-color: DarkSlateBlue;
 }
 
@@ -293,9 +292,10 @@ img {
 
 .blog .subheader {
 	color: var(--green-autumn);
-	font-weight: bold;
+	font-weight:  600;
 	margin-top: 0.7rem;
 	margin-bottom: 0.4rem;
+	font-size: 1.3rem;
 }
 
 .blog .text {
@@ -314,24 +314,25 @@ img {
 	padding: 10px 0 10px 0;
 }
 
-.blog img {
-	border-radius: 0.5rem;
-	background: #000000;
-}
-
 .image {
 	background: #bbbbbb;
 	border-radius: 0.5rem;
 	width: 60%;
 	margin: 1rem 0 1rem 0;
+	padding: 0.13rem;
+}
+
+.image img {
+	background: #000000;
+	border-radius: 0.5rem;
 }
 
 .caption {
 	color: #000000;
 	margin-left: 1rem;
-	font-style: italic;
 	font-size: 0.9rem;
 	font-weight: 400;
+	font-style: italic;
 }
 
 /* 5 Star Score for Review Posts */
